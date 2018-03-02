@@ -36,7 +36,15 @@ var appTwo = new Vue({
       "https://img.buzzfeed.com/buzzfeed-static/static/2015-12/10/22/enhanced/webdr08/enhanced-1782-1449804533-7.jpg?downsize=715:*&output-format=auto&output-quality=auto",
       "http://img-9gag-fun.9cache.com/photo/a0Y14Nn_700b.jpg",
       "https://i.pinimg.com/564x/22/3f/eb/223feb68cc0bbea2d3885bbb920dcd28.jpg",
-      "https://i.pinimg.com/564x/6e/e2/7d/6ee27dfe2618f3c9f76489900782bc3e.jpg"
+      "https://i.pinimg.com/564x/6e/e2/7d/6ee27dfe2618f3c9f76489900782bc3e.jpg",
+      "https://img.buzzfeed.com/buzzfeed-static/static/2014-05/enhanced/webdr04/14/8/original-20923-1400069345-14.jpg",
+      "https://i.pinimg.com/originals/ef/ee/19/efee19a12f09ee90ee4b308e0f196949.jpg",
+      "https://i.pinimg.com/originals/4d/22/8b/4d228b7c3782420d00153fb35b80aa79.jpg",
+      "https://img.buzzfeed.com/buzzfeed-static/static/2014-08/11/14/enhanced/webdr05/anigif_enhanced-6930-1407782075-5.gif",
+      "http://images4.fanpop.com/image/photos/15000000/LiL-Nacho-libre-nacho-libre-15086120-319-426.jpg",
+      "https://media.giphy.com/media/CKY2egPIpnBT2/giphy.gif",
+      "http://media.fakeposters.com/results/2013/03/29/zplx0l3qtw.jpg",
+      "http://littlegreenfootballs.com/weblog/img/wrenchwench/2011/01/04/lucha_libre.jpg"
     ]
   },
   methods:{
