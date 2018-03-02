@@ -26,6 +26,16 @@
 	background-position: top left, center center;
 }
 
+/* Two */
+
+#three {
+	background: url("images/overlay.png"), url("/CreativeProject4/images/luchgif1.gif");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+
 /* Paragraph Overlay */
 p.trans_background{
 	background-color: rgba(0,0,0,.6);
@@ -43,4 +53,26 @@ p.trans_background{
 	text-align:center;
 }
 
+.imgDiv{
+	height:50vh;
+	/*max-width: 100%;*/
+}
+
 .relativeposition{ position: relative !important; }
+
+button.butt{
+	-moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+

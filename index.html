@@ -84,10 +84,35 @@
 				<!-- Hey Webmaster! Place this html code where you'd like the game to appear. -->
 				<iframe src="https://www.silvergames.com/en/burrito-bison/iframe" width="720" height="480" style="margin:0;padding:0;border:0"></iframe>
 				<p style="text-align:center">More <a href="https://www.silvergames.com/en/t/cannon">Cannon Games</a> on Silvergames.com!</p>
+				<br><br>
 				<!-- End of game embed code -->
 			</div>
+			<a href="#three" class="button style2 down anchored">Next</a>
 		</section>
 		<!-- End TWO -->
+
+		<!-- THREE MEMES? -->
+		<section id="three" class="main style2 center dark fullscreen">
+			<div id="appTwo" class="content">
+				<header>
+					<h2>Los Locos Luchas</h2>
+				</header>
+
+				<div>
+					<div class="maskdiv">
+						<img class="imgDiv" v-bind:src="images[curIndex]">
+					</div>
+					<div class="relativeposition w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+						<div class="w3-left w3-hover-text-khaki" v-on:click="prev">&#10094;</div>
+						<button v-on:click="getRand" class="butt">Random</button>
+						<div class="w3-right w3-hover-text-khaki" v-on:click="next">&#10095;</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<!-- End THREE -->
 
 		<!-- FOOTER -->
 		<footer id="footer">

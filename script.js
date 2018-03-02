@@ -13,10 +13,51 @@ var appHeader = new Vue({
       3: {
         href: '#two',
         title: 'Practice'
+      },
+      4: {
+        href: '#three',
+        title: 'Locos Luchas'
       }
     },
   },
 });
+
+var appTwo = new Vue({
+  el: '#three',
+  data: {
+    curIndex:0,
+    images: [
+      "https://i.pinimg.com/originals/be/fd/9c/befd9ccaae0506b8520923e83b05e1ab.jpg",
+      "https://laughingsquid.com/wp-content/uploads/2014/01/june-catcheur.jpg",
+      "https://i.pinimg.com/736x/e2/93/0d/e2930d2c8b3e8cdf293ec73bf876f13b--funny-ha-ha-hilarious.jpg",
+      "https://i.pinimg.com/originals/08/10/1d/08101d73bcdbcef0587a6c91e6e93fea.jpg",
+      "https://i.pinimg.com/originals/72/fc/21/72fc21af42ab64f30973066b5a1ec673.jpg",
+      "https://i.pinimg.com/736x/60/f0/b0/60f0b00247a894e1b1be717e88c0f83a--nachos-funny-movies.jpg",
+      "https://img.buzzfeed.com/buzzfeed-static/static/2015-12/10/22/enhanced/webdr08/enhanced-1782-1449804533-7.jpg?downsize=715:*&output-format=auto&output-quality=auto",
+      "http://img-9gag-fun.9cache.com/photo/a0Y14Nn_700b.jpg",
+      "https://i.pinimg.com/564x/22/3f/eb/223feb68cc0bbea2d3885bbb920dcd28.jpg",
+      "https://i.pinimg.com/564x/6e/e2/7d/6ee27dfe2618f3c9f76489900782bc3e.jpg"
+    ]
+  },
+  methods:{
+    next: function() {
+      if (this.curIndex >= this.images.length - 1)
+        this.curIndex = 0;
+      else this.curIndex += 1;
+    },
+    prev: function(){
+      if (this.curIndex <= 0)
+        this.curIndex = this.images.length - 1;
+      else this.curIndex -= 1;
+    },
+    getRand: function(){
+      var oldIndx = this.curIndex;
+      while(this.curIndex === oldIndx)
+        this.curIndex = Math.floor(Math.random() * (this.images.length - 1));
+    }
+  },
+});
+
 
 var appOne = new Vue({
   el: '#one',
