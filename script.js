@@ -8,8 +8,12 @@ var appHeader = new Vue({
       },
       2: {
         href: '#one',
-        title: 'What is cool?'
+        title: 'Your Mask'
       },
+      3: {
+        href: '#two',
+        title: 'Practice'
+      }
     },
   },
 });
