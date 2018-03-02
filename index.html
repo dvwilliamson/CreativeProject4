@@ -2,46 +2,72 @@
 <html>
   <head>
   	<link rel="shortcut icon" type="image/png" href="/CreativeProject4/favicon.png"/>
-    <link rel="stylesheet" href="/CreativeProject4/styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title>Luchadorable</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- NEED TO UNDERSTAND EVERYTHING IN THIS FILE -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/CreativeProject4/assets/css/main.css" />
+
+    <!-- Override generated Styles -->
+	<link rel="stylesheet" href="/CreativeProject4/styles.css"/>
 </head>
 <body>
-	<div id="app">
+	<!--<div id="app">-->
 		<!-- HEADER -->
 		<header id="header">
+			<div id="appHeader">
 			<h1>Luchadorable</h1>
 			<nav>
 				<ul>
-					<li v-for="navItem in navItems" v-bind:href="navItem.href">{{navItem.title}}</li>
+					<li v-for="navItem in navItems"><a v-bind:href="navItem.href">{{navItem.title}}</a></li>
 				</ul>
 			</nav>
+			</div>
 		</header>
 		<!-- END HEDAER -->
 
 		<!-- INTRO -->
 		<section id="intro" class="main style1 dark fullscreen">
+			<div id="appIntro" class="content">
 			<div class="content">
 				<header>
 					<h2>Welcome.</h2>
 				</header>
-				<p>This website is dedicated to the wonderful <strong>LUCHADORES</strong> who make wrestling worthwhile. I honesty don't know a lot about their history, but I do know that they make wrestling worthwhile. Those flying-tight-wearing men </p>
+				<p>This website is dedicated to the wonderful <strong>LUCHADORES</strong> who make wrestling worthwhile. I honesty don't know a lot about their history, but I do know those flying-tight-wearing men make wrestling worthwhile.</p>
 				<footer>
 					<a href="#one" class="button style2 down">More</a>
 				</footer>
-
 			</div>
 		</section>
 		<!-- END INTRO -->
 
 		<!-- ONE Chose your luchador mask -->
+		<!-- Image Creds: https://www.vecteezy.com/vector-art/172921-mexican-wrestler-portrait-vector-set -->
+		<section id="one" class="main style2 center dark fullscreen">
+			<div class="content">
+				<header>
+					<h2>The Mask.</h2>
+				</header>
+				<p class="trans_background">One of the most important elements of being a luchador is choosing the right equipment. </p>
+				
 
+				<!--<div class="w3-content w3-display-container" style="max-width:800px">-->
+					<div class="maskdiv">
+						<img v-bind:src="luchMask" style="max-height:50vh">
+					</div>
+					<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+						<div class="w3-left w3-hover-text-khaki" v-on:click="prev">&#10094;</div>
+						<div class="w3-right w3-hover-text-khaki" v-on:click="next">&#10095;</div>
+						<span v-for="image in images" v-bind:class="['w3-badge', 'w3-border', 'w3-transparent', 'w3-hover-white', {'w3-white':image.active}]" v-on:click="goToMask($event, image)"></span>
+					</div>
+				<!--</div>-->
+				<br><br>
+			</div>
+			<a href="#two" class="button style2 down anchored">Next</a>
+		</section>
 		<!-- End ONE -->
 
 		<!-- TWO Luchador jokes -->
