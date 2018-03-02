@@ -52,18 +52,21 @@
 					<h2>The Mask.</h2>
 				</header>
 				<p class="trans_background">One of the most important elements of being a luchador is choosing the right equipment. </p>
-				
 
-				<!--<div class="w3-content w3-display-container" style="max-width:800px">-->
-					<div class="maskdiv">
-						<img v-bind:src="luchMask" style="max-height:50vh">
-					</div>
-					<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div class="maskdiv">
+					<img v-bind:src="images[curIndex].url" style="max-height:50vh">
+				</div>
+
+				<div>
+					<div class="relativeposition w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
 						<div class="w3-left w3-hover-text-khaki" v-on:click="prev">&#10094;</div>
 						<div class="w3-right w3-hover-text-khaki" v-on:click="next">&#10095;</div>
 						<span v-for="image in images" v-bind:class="['w3-badge', 'w3-border', 'w3-transparent', 'w3-hover-white', {'w3-white':image.active}]" v-on:click="goToMask($event, image)"></span>
 					</div>
-				<!--</div>-->
+				</div>
+				
+				<h2>{{images[curIndex].title}}</h2>
+				<p class="trans_background">{{images[curIndex].description}}</p>
 				<br><br>
 			</div>
 			<a href="#two" class="button style2 down anchored">Next</a>

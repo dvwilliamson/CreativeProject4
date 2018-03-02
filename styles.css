@@ -37,8 +37,10 @@ p.trans_background{
 
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
-.w3-section, .w3-code { margin-bottom: 40px!important; }
+/*.w3-section, .w3-code { margin-bottom: 40px!important; }*/
 .maskdiv{
 	width:100%; 
 	text-align:center;
 }
+
+.relativeposition{ position: relative !important; }
